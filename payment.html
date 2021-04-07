@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<title>DONATE</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+    .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+      
+    }
+    
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align:center;
+    }
+    
+    .container:hover .image {
+      opacity: 0.3;
+    }
+    
+    .container:hover .middle {
+      opacity: 1;
+    }
+    
+    .text {
+      background-color: #acf13b;
+      color: rgb(20, 1, 1);
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+
+    h1 {
+        text-align:right;
+        text-transform: uppercase;
+        color: #1b2002;
+        font-family:Algerian;
+        font-style: oblique;
+        font-weight:"bolder";
+        
+      }
+
+    p {
+       text-indent: 50px;
+       text-align: right;
+       letter-spacing: 0px;
+       font-style:bold;
+       font-style:italic;
+       font-weight: bolder;
+       
+      }
+
+  </style>
+  </head>
+<body background="payment.jpg">
+  <br><br><br><br>
+  <div>
+    <h1>Donate for betterment!</h1>
+        <p> 
+          A smaller amount can become the key to greater happiness.Help the needy.
+          <br>Every child needs love.Show some love by donating a little amount!
+          <br>Losing a parent does not only constitue a huge tragedy and shock to a
+          <br>tender child but it can also mean that access to sustenance, education,  
+          <br>shelter, and a chance for a secure future all become an unobtaibnable dream. 
+          <br>This is why the responsibility of care for the orphan falls on all of us. 
+        
+        </p>
+ </div>
+<!-- Donate now button -->
+    <form>
+       <br>
+       <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GupmMOA7xN3nJJ" async> </script> </form>
+   </form>
+   <div class= "container">
+    <img src="image_payment1.jpg" alt="Image not found" class="image" style="width:100%">
+    <div class="middle">
+      <div class="text"><i>"We care for orphans not because we are rescuers,but because we are the rescued."</i></div>
+    </div>
+  </div>
+
+</body>
+</html>
